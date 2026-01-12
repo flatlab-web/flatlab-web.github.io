@@ -38,22 +38,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* ====== ALIGNMENT FIX (方案A核心) ====== */
-/* 1) 所有媒体元素统一满宽显示 */
 img, video, iframe {
   display: block;
   width: 100%;
   max-width: 100%;
 }
 
-/* 2) 让 teaser/figure 这种 hero-body 左右不再缩进（对齐到容器边缘） */
 .hero.teaser .hero-body,
 .hero.teaser .hero-body.no-side-padding {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
 
-/* 3) 轮播区域对齐：强制 carousel / item / 内层容器都 100% */
 .results-carousel,
 .results-carousel .carousel-container,
 .results-carousel .carousel-items,
@@ -64,7 +60,6 @@ img, video, iframe {
   margin-right: 0 !important;
 }
 
-/* 4) 轮播 item 不要自带 margin/padding 缩一圈（否则一定比图片窄） */
 .results-carousel .item {
   margin: 0 !important;
   padding: 0 !important;
@@ -74,7 +69,6 @@ img, video, iframe {
   border-radius: 0 !important;
 }
 
-/* 5) 视频本身满宽 */
 .results-carousel video {
   width: 100% !important;
   height: auto;
@@ -83,14 +77,12 @@ img, video, iframe {
   box-shadow: var(--shadow-md);
   border: 1px solid var(--border-color);
 }
-/* ====== END ALIGNMENT FIX ====== */
 
 .no-side-padding {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
 
-/* Modern Button Styles */
 .button {
   border-radius: var(--border-radius) !important;
   font-weight: 600 !important;
@@ -302,7 +294,6 @@ img, video, iframe {
   box-shadow: var(--shadow-lg);
 }
 
-/* 保留原来 results-carousel 结构，但 item 缩进已在顶部被覆盖为 0 */
 .results-carousel {
   overflow: hidden;
   padding: 1rem 0;
