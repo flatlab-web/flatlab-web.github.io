@@ -163,6 +163,56 @@ img, video, iframe {
   line-height: 1.1 !important;
 }
 
+.publication-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.publication-link {
+  display: inline-flex;
+  overflow: hidden;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+  white-space: nowrap;
+  transition: filter 0.2s;
+}
+
+.publication-link:hover,
+.publication-link:focus {
+  color: white;
+  filter: brightness(1.12);
+}
+
+.publication-link-label,
+.publication-link-value {
+  padding: 0.3rem 0.65rem;
+}
+
+.publication-link-label {
+  background: #000;
+}
+
+.publication-link-value {
+  color: #17212b;
+}
+
+.publication-link-value.is-arxiv {
+  background: #ff8591;
+}
+
+.publication-link-value.is-github {
+  background: #58cbd5;
+}
+
+.publication-link-value.is-huggingface {
+  background: #ffd44d;
+}
+
 .publication-banner {
   max-height: 70vh;
   border-radius: var(--border-radius-lg);
