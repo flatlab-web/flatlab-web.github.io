@@ -168,6 +168,16 @@ img, video, iframe {
   line-height: 1.1 !important;
 }
 
+@media screen and (min-width: 769px) {
+  .publication-hero .publication-title {
+    margin-bottom: 3.75rem !important;
+  }
+
+  .publication-hero .hero-body {
+    padding-bottom: 2.25rem;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .publication-title-line {
     display: block;
